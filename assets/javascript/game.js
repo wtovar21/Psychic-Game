@@ -1,0 +1,1 @@
+var alphabet ["a","e","i","o","u"]

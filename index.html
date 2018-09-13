@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Psychic Gaming</title>
+</head>
+<body>
+	<div><h1>Psychic Game</h1></div>
+	<div><p>Can you guess what letter I'm thinking of?</p></div>
+	<div><p>Wins:</p></div>
+	<div><p>Losses:</p></div>
+	<div><p>Guesses Left:</p></div>
+	<div><p>Your guesses inputed:</p></div>
+	<div id="directionsText">Press spacebar to begin!
+	</div>
+	<script>
+	// if they guess correctly, add to Wins
+	// if they guess incorrectly, add to Losses
+	// As they guess, reduce guess lives
+	// count how many guesses were inputed
+	var alphabet = ["a","e","i","o","u"];
+	var wins = 0;
+	var losses = 0;
+
+	  var directionsText = document.getElementById("directions-text");
+    var userChoiceText = document.getElementById("userchoice-text");
+    var computerChoiceText = document.getElementById("computerchoice-text");
+    var winsText = document.getElementById("wins-text");
+    var lossesText = document.getElementById("losses-text");
+
+    document.onkeyup = function(event){
+
+    	var userGuess = event.key;
+
+    
+   		var computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
+
+   		if ((userGuess === "a") || (userGuess === "e") || (userGuess === "i")) || ((userGuess === "o") || (userGuess === "u")
+   		
+	}
+
+
+	</script>
+
+</body>
+</html>
